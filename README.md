@@ -1,3 +1,8 @@
+Forked to handle restricted tokens
+Use `pushEmploMkio.ps1` to push package into registry
+
+---
+
 # A .NET client SDK for MediaKind MK.IO
 
 This project is an open source .NET SDK for [MediaKind MK.IO](https://mk.io). For maximum compatibility, it targets .NET 8.0, .NET Standard 2.0 and .NET Framework 4.6.2. 
