@@ -1,4 +1,7 @@
 Forked to handle restricted tokens
+Use `pushEmploMkio.ps1` to push package into registry
+
+---
 
 # A .NET client SDK for MediaKind MK.IO
 
