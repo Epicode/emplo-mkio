@@ -61,7 +61,7 @@ namespace MK.IO
         /// </summary>
         /// <param name="subscriptionName">The MK.IO subscription name</param>
         /// <param name="jwtToken">The MK.IO JWT API Token.</param>
-        [Obsolete("This ctor doesn't work with restricted tokens. Use version that requires customerId")]
+        [Obsolete("This ctor doesn't work with restricted tokens. Use version that requires organizationId")]
         public MKIOClient(string subscriptionName, string jwtToken)
         {
             Argument.AssertNotNullOrEmpty(subscriptionName, nameof(subscriptionName));
@@ -93,7 +93,7 @@ namespace MK.IO
         }
 
         /// <summary>
-        /// Create a client to operate the resources of a MK.IO subscription. Allows setting organization id so that there wont be any profile api fetches
+        /// Create a client to operate the resources of a MK.IO subscription. Allows setting organization id so that there won't be any Profile API fetches
         /// </summary>
         /// <param name="subscriptionName">The MK.IO subscription name</param>
         /// <param name="jwtToken">The MK.IO JWT API Token.</param>
@@ -102,6 +102,9 @@ namespace MK.IO
         public MKIOClient(string subscriptionName, string jwtToken, Guid organizationId) : this(subscriptionName, jwtToken)
 #pragma warning restore CS0618 // Type or member is obsolete
         {
+            if(organizationId == Guid.Empty)
+                throw new ArgumentNullException(nameof(organizationId));
+
             _customerId = organizationId;
         }
 

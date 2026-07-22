@@ -1,7 +1,7 @@
 $ghToken = $Env:GITHUB_TOKEN
 
 if ([string]::IsNullOrEmpty($ghToken)) {
-    throw "GitHub token (GITHUB_TOKEN) is not set in environmental variables."
+    throw "GitHub token (GITHUB_TOKEN) is not set in environment variables"
 }
 
 # 1. Pack the project first to create the .nupkg file
