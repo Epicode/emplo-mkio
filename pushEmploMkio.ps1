@@ -10,7 +10,7 @@ dotnet pack .\MK.IO\MK.IO.csproj -c Release -o ./.dist
 
 # 2. Push the generated package
 # We use a wildcard to grab the .nupkg from the output folder
-dotnet nuget push ".\dist\*.nupkg" `
+dotnet nuget push ".\.dist\*.nupkg" `
     --source "https://nuget.pkg.github.com/Epicode/index.json" `
     --api-key $ghToken `
     --skip-duplicate

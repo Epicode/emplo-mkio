@@ -10,6 +10,9 @@
     <Description>A .NET client SDK for MediaKind MK.IO.</Description>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageId>Emplo.MK.IO</PackageId>
+    <AssemblyName>Emplo.MK.IO</AssemblyName>
+    <RootNamespace>Emplo.MK.IO</RootNamespace>
     <Version>2.2.0</Version>
     <RepositoryUrl>https://github.com/Epicode/emplo-mkio</RepositoryUrl>
     <RepositoryType>git</RepositoryType>

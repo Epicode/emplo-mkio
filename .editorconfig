@@ -244,6 +244,6 @@ dotnet_naming_style._camelcase.required_suffix =
 dotnet_naming_style._camelcase.word_separator = 
 dotnet_naming_style._camelcase.capitalization = camel_case
 
-# Im not going to be fixing all warnings in the package. Ill just silence them
+# Im not going to be fixing all warnings in the package. Ill just silence some of them
 # CS8618: Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
 dotnet_diagnostic.CS8618.severity = silent
